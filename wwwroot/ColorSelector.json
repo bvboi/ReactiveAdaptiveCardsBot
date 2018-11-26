@@ -1,0 +1,39 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "id": "textBlock",
+            "text": "Select a Color"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "placeholder": "Placeholder text",
+            "choices": [
+                {
+                    "title": "Green",
+                    "value": "Green"
+                },
+                {
+                    "title": "Red",
+                    "value": "Red"
+                }
+            ],
+            "id":"choiceset",
+            "style": "expanded"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "id": "submit",
+            "title": "Submit",
+            "data":{
+                        "action": "colorselector"
+                
+            }
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}
